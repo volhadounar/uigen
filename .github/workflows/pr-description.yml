@@ -34,10 +34,10 @@ jobs:
 
           FULL_PROMPT="$PROMPT
 
-PR title: ${{ github.event.pull_request.title }}
+          PR title: ${{ github.event.pull_request.title }}
 
-Git diff:
-$DIFF"
+          Git diff:
+          $DIFF"
 
           echo "prompt<<EOF" >> $GITHUB_OUTPUT
           echo "$FULL_PROMPT" >> $GITHUB_OUTPUT
